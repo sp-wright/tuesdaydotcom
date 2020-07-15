@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "285f5e9b988df7d670dd0647c9efc91f",
+    "revision": "5585f4c06403f05bf0099d0e3c896ba5",
     "url": "/tuesdaydotcom/index.html"
   },
   {
-    "revision": "a415cc56080e98459f73",
-    "url": "/tuesdaydotcom/static/css/main.5cb2fe5d.chunk.css"
+    "revision": "2f65b545cd7fc12ef299",
+    "url": "/tuesdaydotcom/static/css/main.8c021d6b.chunk.css"
   },
   {
     "revision": "46a09b236142071c39ab",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tuesdaydotcom/static/js/2.b29225e7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a415cc56080e98459f73",
+    "revision": "2f65b545cd7fc12ef299",
     "url": "/tuesdaydotcom/static/js/main.6238239e.chunk.js"
   },
   {

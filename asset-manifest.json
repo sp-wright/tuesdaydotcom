@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tuesdaydotcom/static/css/main.5cb2fe5d.chunk.css",
+    "main.css": "/tuesdaydotcom/static/css/main.8c021d6b.chunk.css",
     "main.js": "/tuesdaydotcom/static/js/main.6238239e.chunk.js",
     "main.js.map": "/tuesdaydotcom/static/js/main.6238239e.chunk.js.map",
     "runtime-main.js": "/tuesdaydotcom/static/js/runtime-main.847c4b4e.js",
@@ -8,15 +8,15 @@
     "static/js/2.b29225e7.chunk.js": "/tuesdaydotcom/static/js/2.b29225e7.chunk.js",
     "static/js/2.b29225e7.chunk.js.map": "/tuesdaydotcom/static/js/2.b29225e7.chunk.js.map",
     "index.html": "/tuesdaydotcom/index.html",
-    "precache-manifest.05f0f10bff5f2ccdff631f888e31c52a.js": "/tuesdaydotcom/precache-manifest.05f0f10bff5f2ccdff631f888e31c52a.js",
+    "precache-manifest.bac27065c4f2fce2c8f5ae2c7de09879.js": "/tuesdaydotcom/precache-manifest.bac27065c4f2fce2c8f5ae2c7de09879.js",
     "service-worker.js": "/tuesdaydotcom/service-worker.js",
-    "static/css/main.5cb2fe5d.chunk.css.map": "/tuesdaydotcom/static/css/main.5cb2fe5d.chunk.css.map",
+    "static/css/main.8c021d6b.chunk.css.map": "/tuesdaydotcom/static/css/main.8c021d6b.chunk.css.map",
     "static/js/2.b29225e7.chunk.js.LICENSE.txt": "/tuesdaydotcom/static/js/2.b29225e7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.847c4b4e.js",
     "static/js/2.b29225e7.chunk.js",
-    "static/css/main.5cb2fe5d.chunk.css",
+    "static/css/main.8c021d6b.chunk.css",
     "static/js/main.6238239e.chunk.js"
   ]
 }
