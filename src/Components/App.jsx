@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './Header';
 import JobForm from './JobForm';
 import JobOutput from './JobOutput';
+import '../style.css';
 
 function App() {
   const [jobs, setJobs] = useState([]);
