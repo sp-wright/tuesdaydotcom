@@ -166,6 +166,7 @@ select:focus {
 
 .task-text-output-container {
   text-align: left;
+  text-transform: none;
 }
 
 .comment-container {
@@ -182,6 +183,7 @@ select:focus {
   margin: 0.5rem 0;
   padding: 0 0.5rem;
   width: 90%;
+  text-transform: initial;
 }
 
 .add-comment-form {
@@ -288,7 +290,7 @@ select:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(25, 141, 135, 0.336);
+    background-color: rgba(25, 141, 135, 0.123);
     border-radius: 5px;
     border-bottom: none;
     margin: 1.5vh 5vw;
@@ -299,11 +301,16 @@ select:focus {
     width: 90%;
   }
 
+  .task-text-output-container {
+    text-align: center;
+    text-transform: none;
+  }
+
   .trash {
     color: #fa163f;
     cursor: pointer;
     position: absolute;
-    left: 5%;
+    left: 10%;
   }
 
   .job-item-container p {
