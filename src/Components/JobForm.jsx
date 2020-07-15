@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 
 const JobForm = (props) => {
+  const [formValid, setFormValid] = useState({
+    taskValid: true,
+    departmentValid: true,
+    priorityValid: true,
+  });
   const [job, setJob] = useState({
     task: '',
     department: '',
@@ -17,11 +22,30 @@ const JobForm = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    if (job.task === '' || job.department === '' || job.department === 'none' || job.priority === '' || job.priority === 'none') {
-      alert('fill out the form');
+    let task = true;
+    let department = true;
+    let priority = true;
+
+    if (job.task === '') {
+      task = false;
+    }
+    if (job.department === '') {
+      department = false;
+    }
+    if (job.priority === '') {
+      priority = false;
+    }
+
+    if (task === false || department === false || priority === false) {
+      setFormValid({
+        taskValid: task,
+        departmentValid: department,
+        priorityValid: priority,
+      });
     } else {
       props.submit(job);
       setJob({ task: '', department: '', priority: '' });
+      setFormValid({ taskValid: true, departmentValid: true, priorityValid: true });
     }
   };
 
@@ -30,11 +54,19 @@ const JobForm = (props) => {
       <form onSubmit={(e) => submitHandler(e)}>
         <div className="form-grp">
           <label htmlFor="title">Task:</label>
-          <input className="user-input" value={job.task} onChange={(e) => updateJob(e.target)} type="text" name="task" autoComplete="off" placeholder="Enter your task..." />
+          <input
+            className={formValid.taskValid ? 'user-input' : 'user-input not-valid'}
+            value={job.task}
+            onChange={(e) => updateJob(e.target)}
+            type="text"
+            name="task"
+            autoComplete="off"
+            placeholder={formValid.taskValid ? 'Enter your task...' : 'You need to Enter a Task!'}
+          />
         </div>
         <div className="form-grp">
           <label htmlFor="type">Department:</label>
-          <select value={job.department} onChange={(e) => updateJob(e.target)} id="department">
+          <select className={formValid.departmentValid ? null : 'not-valid'} value={job.department} onChange={(e) => updateJob(e.target)} id="department">
             <option value="none">Select an Option</option>
             <option value="ui/ux">UI/UX</option>
             <option value="frontend">Frontend</option>
@@ -43,7 +75,7 @@ const JobForm = (props) => {
         </div>
         <div className="form-grp">
           <label htmlFor="type">Priority:</label>
-          <select value={job.priority} onChange={(e) => updateJob(e.target)} id="priority">
+          <select className={formValid.priorityValid ? null : 'not-valid'} value={job.priority} onChange={(e) => updateJob(e.target)} id="priority">
             <option value="none">Select an Option</option>
             <option value="normal">Normal</option>
             <option value="important">Important</option>

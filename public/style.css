@@ -113,6 +113,12 @@ select:focus {
   justify-content: center;
 }
 
+/*********** FORM VALIDATION ************/
+
+.not-valid {
+  border: solid 2px red;
+}
+
 /************************** JOB HEADING **************************/
 
 .header-span {
@@ -137,37 +143,45 @@ select:focus {
 .job-item-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
+  margin: 0 5vw;
+  text-align: center;
+  align-items: center;
   border-bottom: solid 1px #444;
   text-transform: uppercase;
-  text-align: center;
-  margin: 3vh 5vw;
-  align-items: center;
 }
 
-.job-item-container div:first-child {
+.job-item-container:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.job-item-container div {
-  padding: 0 1rem;
+.number-output-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.job-item-container div:last-child {
+.task-text-output-container {
+  text-align: left;
+}
+
+.comment-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: left;
   align-items: center;
-  position: relative;
 }
 
 .comment-text {
+  display: flex;
+  justify-content: space-between;
   font-size: 0.75rem;
-  text-align: left;
   margin: 0.5rem 0;
+  padding: 0 0.5rem;
+  width: 90%;
 }
 
 .add-comment-form {
@@ -176,11 +190,6 @@ select:focus {
 
 .add-comment-form button {
   background: none;
-}
-
-.comment-list-container {
-  list-style-type: circle;
-  margin-left: -5rem;
 }
 
 .trash {
@@ -198,6 +207,7 @@ select:focus {
   color: #fa163f;
   cursor: pointer;
   padding-left: 0.5rem;
+  align-self: center;
 }
 
 .minus:hover,
